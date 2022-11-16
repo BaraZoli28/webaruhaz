@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+main {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h h h"
+                         "n n n"
+                         "a a as"
+                         "f f f";
+}
+
+header{
+    grid-area: h;
+    background-color: darkgrey;
+}
+nav {
+    grid-area: n;
+}
+article {
+    grid-area: a;
+}
+aside {
+    grid-area: as;
+}
+footer{
+    grid-area: f;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.menu{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
