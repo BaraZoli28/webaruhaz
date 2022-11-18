@@ -13,8 +13,14 @@ main {
                          "n n n"
                          "a a as"
                          "f f f";
+    background-color: darkgray;
 }
+section  {
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 10px solid red; 
+}
 header{
     grid-area: h;
     background-color: darkgrey;
@@ -27,6 +33,7 @@ article {
 }
 aside {
     grid-area: as;
+    
 }
 footer{
     grid-area: f;
@@ -40,4 +47,51 @@ footer{
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+article img{
+    width: 100%;
+}
+.kosar {
+display: grid;
+grid-template-columns:  1fr 1fr;
+}
+
+.Ar{
+    border:5px;
+    border-color: gray;
+}
+.Termekek{
+    border: 5px solid gray;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.bevasarlo{
+width: 50%
+}
+
+.Termekek img{
+    width: 100%;
+}
+/* border a keret , p tag az ár*/
+
+
+
+
+
+
+
+
+@media screen and ( max-width:700px) {
+  main{ 
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and ( max-width:400px){
+ main{
+    grid-template-columns: 1fr;
+ }
 }
